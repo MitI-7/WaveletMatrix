@@ -137,7 +137,7 @@ public:
 
     // v[0, pos)のcの数
     uint64_t rank(const uint64_t c, uint64_t pos) {
-        assert(pos < size);
+        assert(pos <= size);
         if (c >= this->sigma) {
             return 0;
         }
